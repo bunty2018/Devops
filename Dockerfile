@@ -1,4 +1,3 @@
-FROM centos:latest
-RUN yum install httpd -y
-CMD [“/usr/sbin/httpd”,” -D”,” FOREGROUND”]
-EXPOSE 80
+FROM ubuntu:xenial
+RUN apt-get update -y
+RUN apt-get install wget -y
